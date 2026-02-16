@@ -26,7 +26,9 @@ Respect The Creator
 
 If you dare to steal, I hope God gives you 
 permanent diarrhea forever! 🚽💨
+    
           ᶠᶸᶜᵏᵧₒᵤ 🖕
+    
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 
    
