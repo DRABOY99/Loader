@@ -6,15 +6,13 @@ MESSAGE = [[
     
 🆕 WHAT'S NEW: : ᕙ( •̀ ᗜ •́ )ᕗ
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
-
 🔥 Add new game: Kingland
 
-
-
+    
 ⚠️ DON'T BE A THIEF! (๑•̀ᗝ•́)૭
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 This script is 100% FREE. 
-Use it, don't steal it 
+Use it, don't steal it asshole !!
 Respect The Creator
 
 🚫 NO DECRYPT!
