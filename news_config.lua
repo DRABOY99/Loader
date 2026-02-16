@@ -17,7 +17,7 @@ MESSAGE = [[
 ⚠️ DON'T BE A THIEF! (๑•̀ᗝ•́)૭
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 This script is 100% FREE. 
-Use it, don't steal it, Bit*ch !! 
+Use it, don't steal it 
 Respect The Creator
 
 🚫 NO DECRYPT!
