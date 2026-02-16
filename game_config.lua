@@ -11,7 +11,7 @@
                 {
                     name = "🎃 Grim Soul: Dark Fantasy",
                     version = "8.0.0",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/grimsoul.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/grimsoul.lua",
                     NEWS = {
                         TITLE = "Grim Soul Features",
                         PAGES = {
@@ -45,7 +45,7 @@ Note : Some Mod hack Not work in emulator
                 {
                     name = "🧟 Last Day on Earth: Survival",
                     version = "1.43.0",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/ldoe.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/ldoe.lua",
                     NEWS = {
                         TITLE = "LDOE Features",
                         PAGES = {
@@ -84,7 +84,7 @@ Note : Mod Feature Unstable in Emulator PC
                 {
                     name = "🚇 Metro 2050 Survival",
                     version = "0.0.365",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/metrov2.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/metrov2.lua",
                     NEWS = {
                         TITLE = "Metro 2050 Features",
                         PAGES = {
@@ -120,7 +120,7 @@ Note : Mod Feature Unstable in Emulator PC
                 {
                     name = "👹 Dead God Land",
                     version = "0.0.0349",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/deadgodland.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/deadgodland.lua",
                     NEWS = {
                         TITLE = "Dead God Land Features",
                         PAGES = {
@@ -152,7 +152,7 @@ Note : Some Mod hack Not work in emulator
                 {
                     name = "🦖 Jurassic Survival",
                     version = "2.7.8",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/jurrasic.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/jurrasic.lua",
                     NEWS = {
                         TITLE = "Jurassic Survival Features",
                         PAGES = {
@@ -184,7 +184,7 @@ Note : Mod Feature Unstable in Emulator PC
                 {
                     name = "🧟‍♂️ Box Head Zombie Must Die",
                     version = "3.5.8",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/boxheadz.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/boxheadz.lua",
                     NEWS = {
                         TITLE = "Box Head Zombie Features",
                         PAGES = {
@@ -225,7 +225,7 @@ Note : Mod Feature Unstable in Emulator PC
                 {
                     name = "👨‍🌾 Harvest Moon Home Sweet Home",
                     version = "1.33",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/harvest.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/harvest.lua",
                     NEWS = {
                         TITLE = "Harvest Moon Features",
                         PAGES = {
@@ -261,7 +261,7 @@ Note : Mod Feature Unstable in Emulator PC
                 {
                     name = "👩‍🚀 Mars Survivor",
                     version = "1.2.15",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/mars_survivor.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/mars_survivor.lua",
                     NEWS = {
                         TITLE = "Mars Survivor Features",
                         PAGES = {
@@ -286,7 +286,7 @@ Note : Mod Feature Unstable in Emulator PC
                 {
                     name = "🧙‍♂️ Lonely Survivor",
                     version = "1.39.0",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/lonely.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/lonely.lua",
                     NEWS = {
                         TITLE = "Lonely Survivor Features",
                         PAGES = {
@@ -303,7 +303,7 @@ Note : Mod Feature Unstable in Emulator PC
                 {
                     name = "🤴 Kingland",
                     version = "0.7.4",
-                    link = "https://raw.githubusercontent.com/jodiardianboy-code/menu_loader_v2/refs/heads/main/list_game/kingland.lua",
+                    link = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/list_game/kingland.lua",
                     NEWS = {
                         TITLE = "Kingland Features",
                         PAGES = {
