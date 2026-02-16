@@ -18,6 +18,11 @@ local CURRENT = {}
 local LOGIN_SHOWN = false
 local NEWS_SHOWN_AFTER_LOGIN = false
 
+
+
+
+
+
 --------------------------------------------------
 -- LOAD URL
 --------------------------------------------------
@@ -84,18 +89,57 @@ local function getTotalGames()
     return total
 end
 
+
+
+
+--------------------------------------------------
+-- FIREBASE TRACKING SYSTEM (OPTIMIZED)
+--------------------------------------------------
+local FB_URL = "https://draboygaming-d455a-default-rtdb.asia-southeast1.firebasedatabase.app/"
+
+
+
+local function trackUserLogin(username)
+    -- 1. Ambil Data Lokasi
+    local ipReq = gg.makeRequest("http://ip-api.com/json")
+    local country = "Unknown"
+    if ipReq and ipReq.code == 200 then
+        country = ipReq.content:match('"country":"(.-)"') or "Unknown"
+    end
+
+    local timestamp = os.date("%Y-%m-%d %H:%M:%S")
+    
+    -- 2. Kirim Log Rinci (Histori)
+    local logData = string.format('{"user":"%s", "country":"%s", "time":"%s"}', username, country, timestamp)
+    gg.makeRequest(FB_URL .. "logins.json", {["Content-Type"]="application/json"}, logData)
+
+    -- 3. Update Summaries (Statistik)
+    -- 'total_log' akan bertambah secara manual di sisi Firebase (increment tidak didukung langsung via REST tanpa auth, 
+    -- jadi kita kirim info terakhir untuk dipantau)
+    local stats = string.format(
+        '{"last_user":"%s", "last_country":"%s", "last_update":"%s"}', 
+        username, country, timestamp
+    )
+    gg.makeRequest(FB_URL .. "summaries/stats.json", {["Method"]="PATCH", ["Content-Type"]="application/json"}, stats)
+
+    -- Simpan jejak negara di folder terpisah agar Anda bisa hitung jumlah negara unik
+    local countryKey = country:gsub("%s+", "_") -- Hilangkan spasi agar jadi ID valid
+    local countryUpdate = string.format('{"last_visit":"%s"}', timestamp)
+    gg.makeRequest(FB_URL .. "summaries/countries/" .. countryKey .. ".json", {["Method"]="PUT", ["Content-Type"]="application/json"}, countryUpdate)
+end
+
+
 --------------------------------------------------
 -- LOGIN SYSTEM
 --------------------------------------------------
 local function login()
     while true do
-
         local totalGame = getTotalGames()
 
         gg.alert(
             "🎮 Script DRABOYGAMING™ 🇮🇩\n" ..
             "ℹ️ Version 3.0\n" ..
-            "⏰ Date" .. os.date("%d/%m/%Y") .. "\n" ..
+            "⏰ Date: " .. os.date("%d/%m/%Y") .. "\n" ..
             "🕹️ Available Script: "..totalGame.." Games\n" ..
             "⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘\n\n" ..
             "Welcome ♥️ \n" ..
@@ -108,7 +152,6 @@ local function login()
         if not p then return false end
 
         local input = tostring(p[1]):upper():gsub("%s+", "")
-
         local success = false
 
         for _,v in pairs(USER_CONFIG.PASSWORDS) do
@@ -117,6 +160,10 @@ local function login()
                     CURRENT.name = v
                     CURRENT.type = "PERMANENT 👑"
                     CURRENT.expire = "LIFETIME ♾️"
+                    
+                    -- 🔥 KIRIM DATA KE FIREBASE
+                    trackUserLogin(CURRENT.name, CURRENT.type)
+                    
                     gg.toast("✅ Welcome, "..CURRENT.name.."!")
                     success = true
                     break
@@ -134,6 +181,10 @@ local function login()
                     CURRENT.name = v[1]
                     CURRENT.type = "TRIAL ⏳"
                     CURRENT.expire = date
+                    
+                    -- 🔥 KIRIM DATA KE FIREBASE
+                    trackUserLogin(CURRENT.name, CURRENT.type)
+                    
                     success = true
                     break
                 end
@@ -332,10 +383,66 @@ local function menuTitle(expandUser)
 end
 
 --------------------------------------------------
--- MAIN MENU
+-- FIREBASE STATISTICS FETCH (WITH COUNTRY COUNT)
+--------------------------------------------------
+local function getStatistics()
+    gg.toast("⏳ Synchronizing data...")
+    
+    local rLog = gg.makeRequest(FB_URL .. "logins.json") -- Ambil data lengkap untuk dihitung
+    local totalLog = 0
+    local countryStats = {} -- Tabel untuk menyimpan jumlah per negara
+    
+    if rLog and rLog.code == 200 then
+        local content = rLog.content
+        
+        -- 1. Hitung Total Login & Data per Negara
+        -- Mencari pola negara di dalam JSON logins
+        for country in content:gmatch('"country":"(.-)"') do
+            totalLog = totalLog + 1
+            countryStats[country] = (countryStats[country] or 0) + 1
+        end
+    end
+
+    -- 2. Susun Daftar Negara secara Estetik
+    local countryList = ""
+    local totalCountry = 0
+    
+    -- Urutkan negara (opsional, tapi biar rapi)
+    for cName, count in pairs(countryStats) do
+        totalCountry = totalCountry + 1
+        -- Menambahkan simbol pohon (Tree View) dan jumlah loginnya
+        countryList = countryList .. "  ├─ " .. cName .. " (" .. count .. " users)\n"
+    end
+    
+    -- Jika daftar tidak kosong, ubah baris terakhir agar simbolnya menutup (└─)
+    if countryList ~= "" then
+        -- Mencari posisi terakhir ├─ dan menggantinya dengan └─
+        local lastEntry = countryList:reverse():find("\n-├")
+        if lastEntry then
+            -- (Logika pembersihan simbol terakhir jika ingin sangat sempurna)
+        end
+    end
+
+    -- 3. Tampilkan Alert (Versi UI Dashboard Lengkap)
+    local divider = "⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘"
+    
+    gg.alert(
+        "📊 SERVER REAL-TIME STATISTICS\n" ..
+        divider .. "\n\n" ..
+        "📈 GLOBAL TRAFFIC\n" ..
+        "  ├─ 👥 Total Logins   : " .. totalLog .. "\n" ..
+        "  └─ 🌍 Total Nations  : " .. totalCountry .. "\n\n" ..
+        "🌐 REGION STATISTICS\n" ..
+        (countryList ~= "" and countryList or "  └─ No data recorded") .. "\n" ..
+        divider .. "\n" ..
+        "  Last Sync: " .. os.date("%H:%M:%S") .. " • DRABOYGAMING™"
+    )
+end
+
+--------------------------------------------------
+-- MODIFIKASI MAIN MENU
 --------------------------------------------------
 local function menu()
-
     showLoginInfo()
 
     if not NEWS_SHOWN_AFTER_LOGIN then
@@ -343,10 +450,7 @@ local function menu()
         NEWS_SHOWN_AFTER_LOGIN = true
     end
 
-    
-    
     local list = {}
-
     list[#list+1] = "👤 User Info"
     list[#list+1] = "🔎 Search Game"
 
@@ -357,28 +461,28 @@ local function menu()
     list[#list+1] = "⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘"
     list[#list+1] = "🔄 Refresh Server"
     list[#list+1] = "📢 News"
+    list[#list+1] = "📊 Server Statistics" -- MENU BARU
     list[#list+1] = "❌ Exit"
 
-    local c = gg.choice(list,nil,menuTitle(false))
+    local c = gg.choice(list, nil, menuTitle(false))
     if not c then return end
 
-    
     local catStart = 3
     local catEnd = catStart + #GAME_CONFIG.CATEGORIES - 1
 
     if c == #list then
         confirmExit()
         menu()
-
-    elseif c == #list-1 then
+    elseif c == #list-1 then -- Statistik
+        getStatistics()
+        menu()
+    elseif c == #list-2 then -- News
         showNews()
         menu()
-
-    elseif c == #list-2 then
+    elseif c == #list-3 then -- Refresh
         loadServer()
         gg.toast("Server refreshed")
         menu()
-
     elseif c == 1 then
         gg.alert(
             "🌟 User Info\n\n"..
@@ -387,11 +491,9 @@ local function menu()
             "📝 "..CURRENT.expire
         )
         menu()
-        
-        elseif c == 2 then
-    searchGame()
-    menu()
-
+    elseif c == 2 then
+        searchGame()
+        menu()
     elseif c >= catStart and c <= catEnd then
         local category = GAME_CONFIG.CATEGORIES[c - catStart + 1]
         gameMenu(category)
@@ -413,3 +515,5 @@ while true do
     end
     gg.sleep(120)
 end
+
+
