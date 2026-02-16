@@ -3,7 +3,7 @@ gg.setVisible(false)
 --------------------------------------------------
 -- CONFIG URL
 --------------------------------------------------
-local URL_GAMES = "hhttps://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/game_config.lua"
+local URL_GAMES = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/game_config.lua"
 local URL_USERS = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/user_config.lua"
 local URL_NEWS  = "https://raw.githubusercontent.com/DRABOY99/Loader/refs/heads/main/news_config.lua"
 
