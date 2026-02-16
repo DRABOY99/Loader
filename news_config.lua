@@ -7,8 +7,6 @@ MESSAGE = [[
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 📢  CHANGELOG / UPDATE:
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
-
-    ᕙ(  •̀ ᗜ •́  )ᕗ
     
 🔥 Add new game Mars Survivor  
 🔥 Add new game Lonely Survivor 
@@ -21,7 +19,8 @@ This script is 100% FREE. Use it, don't steal it!
 NO DECRYPT. NO LEAKING, DONT SELL IT !!
 
 Respect the dev. If you dare to decrypt or steal 
-my code, I hope you God give you permanent diarrhea forever 🚽💨. 
+my code, I hope you God give you permanent 
+    diarrhea forever 🚽💨. ᶠᶸᶜᵏᵧₒᵤ!
 ---
     
 
