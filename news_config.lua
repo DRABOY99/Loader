@@ -7,9 +7,6 @@ MESSAGE = [[
 📢  UPDATE SCRIPT: ᕙ( •̀ ᗜ •́ )ᕗ
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 🆕 WHAT'S NEW: 
-🔥 Add new game: Mars Survivor
-🔥 Add new game: Lonely Survivor
-🔥 Add new game: Box Head Zombie Must Die
 🔥 Add new game: Kingland
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 
@@ -34,9 +31,10 @@ I can do VOODOO for sure. 💀🔥
    
 ( ˊᵕˋ )💕 Thanks to all members who joined my 
 Telegram group and follow my Ytb. It means a lot!
+⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 ♥️ Follow Ytb @DraboyGaming
 ♥️ Group Telegram @DraboyGaming
-⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+
     
     ]],
 LAST_UPDATE = "16-02-2026"
