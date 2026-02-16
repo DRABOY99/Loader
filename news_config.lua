@@ -4,31 +4,35 @@
 TITLE = "🎮 Script DRABOYGAMING™ 🇮🇩",
 MESSAGE = [[
     
+📢  UPDATE SCRIPT: ᕙ( •̀ ᗜ •́ )ᕗ
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
-📢  CHANGELOG / UPDATE:
+🆕 WHAT'S NEW: 
+🔥 Add new game: Mars Survivor
+🔥 Add new game: Lonely Survivor
+🔥 Add new game: Box Head Zombie Must Die
+🔥 Add new game: Kingland
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
-    
-🔥 Add new game Mars Survivor  
-🔥 Add new game Lonely Survivor 
-🔥 Add new game Box Head Zombie Must Die 
-🔥 Add new game Kingland
 
 
-⚠️ DON'T BE A THIEF!
+⚠️ DON'T BE A THIEF! (๑•̀ᗝ•́)૭
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
-This script is 100% FREE. Use it, don't steal it! 
-NO DECRYPT. NO LEAKING, DONT SELL IT !!
-    
-Respect the Creator. 
-If you dare to decrypt or steal 
-my code, I hope God give you permanent 
-diarrhea forever 🚽💨. ᶠᶸᶜᵏᵧₒᵤ!
+This script is 100% FREE. 
+Use it, don't steal it, Bit*ch !! 
+Respect The Creator
 
-    
+🚫 NO DECRYPT!
+🚫 NO REBRANDING!
+🚫 NO LEAKING / NO SELLING!
 
-Thanks for supporting me, especially to 
-the members who joined my Telegram group. 
-It means a lot. ♥️
+If you dare to steal, I hope God gives you 
+permanent diarrhea forever! 🚽💨 ᶠᶸᶜᵏᵧₒᵤ 🖕
+⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+
+   
+⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+( ˊᵕˋ )💕 Thanks to all members who joined my 
+Telegram group. It means a lot!
+⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 
 By Draboy
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
@@ -37,5 +41,5 @@ By Draboy
 ♥️ Group Telegram @DraboyGaming
     
     ]],
-LAST_UPDATE = "13-02-2026"
+LAST_UPDATE = "16-02-2026"
 }
