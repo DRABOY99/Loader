@@ -25,11 +25,12 @@ Respect The Creator
 🚫 NO LEAKING / NO SELLING!
 
 If you dare to steal, I hope God gives you 
-permanent diarrhea forever! 🚽💨 ᶠᶸᶜᵏᵧₒᵤ 🖕
+permanent diarrhea forever! 🚽💨
+          ᶠᶸᶜᵏᵧₒᵤ 🖕
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 
    
-⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+
 ( ˊᵕˋ )💕 Thanks to all members who joined my 
 Telegram group. It means a lot!
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
