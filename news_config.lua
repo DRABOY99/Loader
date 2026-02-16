@@ -25,23 +25,18 @@ Respect The Creator
 🚫 NO LEAKING / NO SELLING!
 
 If you dare to steal, I hope God gives you 
-permanent diarrhea forever! 🚽💨
+permanent diarrhea forever! 🚽💨  ᶠᶸᶜᵏᵧₒᵤ 🖕
     
-          ᶠᶸᶜᵏᵧₒᵤ 🖕
-    
+I can do VOODOO for sure. 💀🔥
+#BantenPeoplePride 🇮🇩🐯🗡️
 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
 
    
-
 ( ˊᵕˋ )💕 Thanks to all members who joined my 
-Telegram group. It means a lot!
-⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
-
-By Draboy
-⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
-    
+Telegram group and follow my Ytb. It means a lot!
 ♥️ Follow Ytb @DraboyGaming
 ♥️ Group Telegram @DraboyGaming
+⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
     
     ]],
 LAST_UPDATE = "16-02-2026"
